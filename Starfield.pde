@@ -1,4 +1,5 @@
 //your code here
+NormalParticle bob = new NormalParticle();
 void setup()
 {
 	//your code here
@@ -7,6 +8,8 @@ void setup()
 void draw()
 {
 	//your code here
+	bob.show();
+	bob.move();
 }
 class NormalParticle
 {
@@ -17,11 +20,13 @@ class NormalParticle
 		speed= 5;
 	}
 	void move(){
-		myX+=speed*sin(angle);
-		myY+=speed*cos(angle);
+		myX+=speed*Math.sin(angle);
+		myY+=speed*Math.cos(angle);
 
 	}
 	void show(){
+		ellipse((float)myX,(float)myY,10,10);
+
 
 	}
 	//your code here
