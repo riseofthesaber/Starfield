@@ -3,11 +3,13 @@ NormalParticle bob = new NormalParticle();
 void setup()
 {
 	//your code here
+
 	size(300,300);
 }
 void draw()
 {
 	//your code here
+	background(0, 0, 0);
 	bob.show();
 	bob.move();
 }
